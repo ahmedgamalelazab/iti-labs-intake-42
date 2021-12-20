@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favourites hub app</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .Container{
+            width:70%;
+            background-color: #ddd;
+            margin: auto;
+            padding:10px;
+            font-size: 20px;
+        }
+        input[type="text"]{
+            width: 70%;
+            margin:5px 0px;
+        }
+        .btn{
+            width: 20%;
+        }
+        .label{
+            display: inline;
+            margin: 10px 5px;
+        }
+
+        .table_style{
+            /* border:1px solid red; */
+            width: 100%;
+            /* padding:5px; */
+            color:black;
+            font-size: 12px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .tr_style{
+            border:1px solid #333;
+            padding:5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Container">
+        <div class="user-fav-options">
+            <div class="label">
+                news Type
+            </div>
+            <input type="radio" name="user-fav-radio" id="user-fav-sport" value="Sport">sport
+            <input type="radio" name="user-fav-radio" id="user-fav-social" value="social">Social
+            <input type="radio" name="user-fav-radio" id="user-fav-politic" value="politic">Politics                        
+        </div>
+        <div class="user-topic-and-controls">
+            <input type="text" name="user-fav" id="user-fav-topic">
+            <button class="btn">Add</button>
+        </div>
+        <div class="search-container">
+            <div class="label">
+                Search
+            </div>
+            <input type="text" name="user-search" id="user-search-fav">
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

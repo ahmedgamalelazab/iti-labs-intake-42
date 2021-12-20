@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Viewer</title>
+</head>
+<body>
+    
+
+    <script>
+        //this script will be internally 
+        var message = `this message will be displayed char by char
+            so pleas be patient ... this message will be terminated
+        `;
+        var index = 0;
+        var t;
+        function printMessage(){
+            document.write(message[index++]);
+            if(index > message.length -1){
+                clearInterval(t);
+                close();
+            }
+          
+           
+        }
+        setInterval(printMessage,100);
+    </script>
+</body>
+</html>

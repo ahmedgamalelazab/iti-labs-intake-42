@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-assignment 6</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="formContainer">
+            <form action="destination.html" method="get">
+               <div class="row">
+                <div class="label">
+                    Enter your name :
+                </div>            
+                <input type="text" 
+                name="userName" placeholder="user name">            
+               </div>
+                <div class="row">
+                    <div class="label">
+                        Enter your age :
+                    </div>
+                    <input type="text" name="userAge" placeholder="age">
+                </div>
+                <div class="label-gender">
+                    enter your Gender :
+                </div>
+                <div class="left-container">
+                    <img src="male.PNG" alt="loading">
+                    <input type="radio" name="gender" id="male-radio" value="m">
+                </div>
+                <div class="right-container">
+                    <img src="famele.PNG" alt="loading">
+                    <input type="radio" name="gender" id="famele-radio" value="f">            
+                </div>
+                <div class="clr"></div>
+                <div class="label">
+                   your fav color :
+                </div>
+                <select name="fav-color" id="fav-color-picker">
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>                
+                </select>
+            <input type="submit" value="submit">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome user</title>
+</head>
+<body>
+    <h2 id="user data"></h2>
+
+    <script>
+
+        var userData = document.cookie;
+        var dataConvert = JSON.parse(userData.split(';')[1].split('=')[1]);
+        document.write(`
+            <h2>${dataConvert['username']}</h2>
+            <h2>${dataConvert['userEmail']}</h2>
+            <h2>${dataConvert['userCountry']}</h2>
+            <h2>${dataConvert['userZipCode']}</h2>
+        `);
+
+    </script>
+</body>
+</html>

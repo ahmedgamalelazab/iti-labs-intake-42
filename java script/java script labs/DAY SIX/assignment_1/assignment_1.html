@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data table</title>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="table-header">
+            <div class="fieldsContainer">
+                <div class="label">
+                    Show
+                </div>
+                <select name="font-size" id="table-font-size">
+                    <option value="ten">10</option>
+                    <option value="ten">20</option>
+                    <option value="ten">30</option>
+                    <option value="ten">40</option>
+                    <option value="default">default</option>
+                </select>
+                <div class="label">
+                    entries
+                </div>
+            </div>
+            <div class="right-table-field-container">
+                <div class="label">
+                    Search 
+                </div>
+                <div class="input-container">
+                    <input type="text" name="search" id="table-search">
+                </div>
+            </div>
+        </div>
+        <div class="clr"></div>
+        <div class="main" id="main-div">
+        <div class="table-container">
+        </div>
+        <div class="btn_container">
+            <button class="btn-add">
+                add Person
+            </button>
+        </div>
+        <div class="btn_container">
+            <button class="btn-sort">
+                sort by age
+            </button>
+        </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

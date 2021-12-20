@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment_3</title>
+    <style>
+      #Container {
+        text-align: center;
+      }
+      .btn {
+        background-color: #333;
+        color: #f4f4f4;
+        margin: 3px 0px;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+      .btn:hover {
+        background-color: rgb(126, 126, 126);
+      }
+      .btn:focus {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Container">
+      <div id="slide-image-container">
+        <img
+          id="myImg"
+          src="./UP/1.jpg"
+          alt="loading"
+          width="200px"
+          height="200px"
+        />
+      </div>
+      <div id="controls">
+        <button class="btn" onclick="prevCallback()">Prev</button>
+        <button class="btn" onclick="playCallback()">Play</button>
+        <button class="btn" onclick="pauseCallback()">Pause</button>
+        <button class="btn" onclick="nextCallback()">Next</button>
+      </div>
+    </div>
+
+    <script>
+      var images = [
+        "./up/1.jpg",
+        "./up/2.jpg",
+        "./up/3.jpg",
+        "./up/4.jpg",
+        "./up/5.jpg",
+        "./up/6.jpg",
+        "./up/7.jpg",
+      ];
+      var t;
+      var index = images.length;
+
+      function prevCallback() {
+        index = index - 1;
+        if (index < 0) {
+          index = images.length - 1;
+        }
+        myImg.src = images[index];
+        console.log(index);
+      }
+      function playCallback() {
+        if(!t)
+          t = setInterval(nextCallback, 500);
+      }
+      function pauseCallback() {
+        clearInterval(t);
+        t = undefined;
+      }
+      function nextCallback() {
+        index = index + 1;
+        if (index > images.length - 1) {
+          index = 0;
+        }
+        console.log(index);
+        myImg.src = images[index];
+      }
+    </script>
+  </body>
+</html>

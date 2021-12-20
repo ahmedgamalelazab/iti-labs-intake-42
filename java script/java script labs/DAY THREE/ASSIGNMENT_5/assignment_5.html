@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 5</title>
+</head>
+<body>
+    
+    <div id="Container">
+        <Button class ="btn" onclick="generateResult()">input</Button> 
+        <input type="text" id="PeopleNames">
+        <Button id ="clear" class ="btn" onclick="clearMe()">output</Button> 
+        <input type="text" id="outPut">
+    </div>
+
+    <script>
+        var randomNames = [];
+        var userInput ='';
+    
+        function genRandom(arr , index){
+            return arr[index]
+        }
+        function clearMe(){
+            for(var i = 0 ; i < randomNames.length ; i++){
+                randomNames.pop();
+            }
+            outPut.value ='';
+        }
+        function generateResult(){           
+            userInput= PeopleNames.value;           
+            var inputArr = JSON.parse(userInput);
+            var min = 0;
+            var max = inputArr.length-1;
+            clearMe();
+            for(var i = 0 ; i < 2 ; i++){
+                randomNames.push(genRandom(inputArr , (Math.floor(Math.random() * (max - min) ) + min)));
+            }
+            outPut.value = JSON.stringify(randomNames);
+
+        }
+    </script>
+</body>
+</html>

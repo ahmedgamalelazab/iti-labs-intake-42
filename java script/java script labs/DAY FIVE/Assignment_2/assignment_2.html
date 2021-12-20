@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_2</title>
+
+    <style>
+        body{
+            background-color: #333;
+        }
+        .errorInput{
+            border:1px red solid;
+        }
+        .correctInput{
+            border:2px green solid;
+        }
+        .container{
+            width:50%;
+            margin:auto;
+            /* text-align: center; */
+            background-color: #f4f4f4;
+            border-radius: 2%;
+            padding: 10px;
+        }
+
+        .label{
+            /* flex:1; */
+            width:12%;
+        }
+        .textField{
+            display:inline; 
+            flex:1;  
+        }
+        input[type="text"]{
+            width: 100%;
+            /* padding:5px; */
+        }
+        .check-box-collection{
+            display: inline;
+        }
+        .selector{
+            display:inline;
+            flex:1;
+        }
+        select{
+            width: 100%;
+            /* padding:5px; */
+        }
+        .fieldContainer{
+            display: flex;
+            /* background-color: red; */
+            padding:10px;
+            flex-direction: row;
+            overflow: hidden;
+        }
+        .btn{
+            display:inline;
+        }
+        input[type="submit"] , input[type="reset"]{
+            width:100px;
+            height: 30px;
+            border: none;
+            margin: 0px 10px 10px 0px;
+            background-color: #333;
+            color:#fff;
+            font-weight: bold;
+        }
+        .btn-container{
+            text-align: center;
+        }
+        input{
+            padding:2px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="destination.html" method="get">
+            <div class="formContainer">
+                <div class="fieldContainer">
+                    <div class="label">
+                        Name :
+                    </div>
+                    <div class="textField">
+                        <input type="text" name="userName" id="user-name">
+                    </div>
+                </div> 
+                <div class="fieldContainer">
+                    <div class="label">
+                        Country :
+                    </div>
+                    <div class="selector">
+                        <select name="country" id="user-country">
+                            <option value="Egypt">Egypt</option>
+                            <option value="Usa">Usa</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Brazil">Brazil</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="fieldContainer">
+                    <div class="label">
+                        Zip :
+                    </div>
+                    <div class="textField">
+                        <input type="text" name="zip-code" id="user-zip-code">
+                    </div>
+                </div>
+                <div class="fieldContainer">
+                    <div class="label">
+                        E-Mail :
+                    </div>
+                    <div class="textField">
+                        <input type="text" name="mail-box" id="user-mail">
+                    </div>
+                </div>
+                <div class="fieldContainer">
+                    <div class="label">
+                        Hoppies :
+                    </div>
+                    <div class="check-box-collection">
+                        <input type="checkbox" name="writing" id="user-hop-writing"> writing
+                        <input type="checkbox" name="reading" id="user-hop-reading"> reading
+                        <input type="checkbox" name="swimming" id="user-hop-swimming"> swimming
+                        <input type="checkbox" name="sleeping" id="user-hop-sleeping"> sleeping
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <div class="btn">
+                        <input type="submit" value="Register">
+                    </div>
+                    <div class="btn">
+                        <input type="reset" value="clear">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

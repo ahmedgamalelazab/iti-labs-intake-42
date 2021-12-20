@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>assignment_3</title>
+    <style>
+        .body{
+            margin:0px;
+        }
+        .Container{
+            text-align: center;
+        }
+        .fields-container{
+            margin:10px 0px;
+        }
+        input[type="text"]{
+            width:77%;
+            padding:10px;
+        }
+        .btn{
+            padding:10px;
+            width: 20%;
+            border: none;
+            background-color: brown;
+            color:white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        h2{
+            color:brown;
+            font-weight: bold;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--TODO APPLICATION-->
+    <div class="Container">
+        <div class="title">
+            <h2>
+                To Do Organizer
+            </h2>
+        </div>
+        <div class="fields-container">
+            <input type="text" name="todo_task" placeholder="Enter task name">
+            <button class="btn">
+                Add
+            </button>            
+        </div>
+        <div class="result_table">
+            <table style="border:1px white solid" width="100%" cellPadding="5px">
+                <tr align="center" style="color:white;">
+                    <td style="margin: 0px 8px; background-color: brown; font-weight: bold; text-align: center; ">
+                        Done
+                    </td>
+                    <td style="margin: 0px 8px; background-color: brown; font-weight: bold; text-align: center; ">
+                       Task
+                    </td>
+                    <td style="margin: 0px 8px; background-color: brown; font-weight: bold; text-align: center; ">
+                        Delete
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: "Lato", "sans-serif";
+        }
+
+        /* added custom font-family  */
+
+        table.one {
+            margin-bottom: 3em;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            /* removed the border from the table data rows  */
+            text-align: center;
+            width: 10em;
+            padding: 1em;
+        }
+
+        th {
+            /* removed the border from the table heading row  */
+            text-align: center;
+            padding: 1em;
+            background-color: #e8503a;
+            /* added a red background color to the heading cells  */
+            color: white;
+        }
+
+        /* added a white font color to the heading text */
+
+        tr {
+            height: 1em;
+        }
+        
+        .biggerPrice{
+            height: 1em;
+            background-color: orange;
+        }
+        .lowerPrice{
+            height: 1em;
+            background-color: #ddd;
+        }
+        .priceOneHundred{
+             height: 1em;
+            background-color: green;
+        }
+    </style>
+    <script>
+        window.addEventListener('load', function () {
+            //1- create object from XMLhttpRequest
+            var xhr = new XMLHttpRequest();
+            //2- open and send
+            xhr.open("GET", "TASK02X.xml", true);
+            xhr.send("");
+            //3- register Event : onreadyStatechange
+            xhr.onreadystatechange = function () {
+                var createdtable = document.createElement('table');
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var res = xhr.responseXML;
+                    var root = res.children[0];
+                    for (var i = 0; i < root.children.length; i++) {
+                        // person
+                        var createdtr = document.createElement('tr');
+                        for (var j = 0; j < root.children[i].children.length; j++) {
+                            var createdtd = document.createElement('td');
+                            root.children[i].children[j].textContent;
+                            createdtd.innerText = root.children[i].children[j].textContent;
+                            createdtr.appendChild(createdtd);        
+                            if(Number(root.children[i].children[3].textContent) < 100){
+                               createdtr.classList.add('lowerPrice');
+                            }else if(Number(root.children[i].children[3].textContent) === 100){
+                                createdtr.classList.add('priceOneHundred');          
+                            }else{
+                                createdtr.classList.add('biggerPrice');
+                            }
+                        }// end of current iterated person
+                        createdtable.appendChild(createdtr);
+                    }
+                    document.getElementsByTagName('div')[0].appendChild(createdtable);
+                }
+            };//end of readystatechange
+        });//end of load
+    </script>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

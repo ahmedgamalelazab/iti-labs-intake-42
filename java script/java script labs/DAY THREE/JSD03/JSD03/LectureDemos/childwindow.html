@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+       // alert(opener.student.ID);
+        function closeparent() {
+            // opener
+            //close();// caller : child window
+            opener.close();
+        }
+    </script>
+</head>
+<body style="background-color:pink">
+    <h2 style="text-align:center;">Child Window</h2>
+    <input type="button" value="Close Parent" onclick="closeparent();"/>
+</body>
+</html>

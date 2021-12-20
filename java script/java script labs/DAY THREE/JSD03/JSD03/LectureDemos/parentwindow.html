@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ParentWindow</title>
+    <script>
+        var student = {
+            // key : value, 
+            ID: 100,
+            Name: "Ahmed Moustafa",
+            Address: {
+                Street: "Gomhoria",
+                Block: 10,
+                Governorate: 'Dakahlia',
+                zipcode: {
+                    code:123
+                }
+            },
+            print: function () { console.log("From Print Method Of Object"); }
+        };
+        function openchild() {
+            // open childwindow.html
+         openedwindow =  open("childwindow.html", "", "width=200,height=200");
+        }
+        function closechild() {
+            // close();// caller for close now :window 
+            openedwindow.close();// caler for close : openedwindow
+        }
+        function movechild() {
+            openedwindow.moveBy(50, 50);
+            openedwindow.focus();
+        }
+    </script>
+</head>
+<body style="background-color:lightyellow;">
+    <h3>Parent Window</h3>
+    <input type="button" value="Open Child Window" onclick="openchild();" /><br />
+    <input type="button" value="Close Child Window" onclick="closechild();" /><br/>
+    <input type="button" value="Move Child Window" onclick="movechild();" />
+</body>
+</html>

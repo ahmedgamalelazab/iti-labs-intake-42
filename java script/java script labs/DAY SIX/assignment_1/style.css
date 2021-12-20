@@ -1,0 +1,105 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;   
+}
+
+
+.clr{
+    clear:both;
+    content:"";
+}
+
+.container {
+    width:80%;
+    background-color: #fff;
+    margin: auto;
+    padding:10px;
+    font-size: 20px;
+}
+
+.table-header{
+    background-color: white;
+
+}
+
+.label{
+    display:inline;
+
+}
+
+.table-header{
+    width:100%;
+    overflow: hidden;
+}
+
+.fieldsContainer{
+    float:left;
+    
+}
+
+.right-table-field-container{
+    float:right;
+    
+}
+
+.input-container{
+    display:inline;
+
+}
+
+
+/*styling table*/
+
+.evenCells{
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+
+.oddCells{
+    background-color: white;
+    font-weight: bold;
+}
+
+table{
+    border: 1px solid #ddd;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+td{
+    background-color: transparent;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(53, 53, 53);
+    text-align: center;
+    color:white;
+}
+
+
+
+[class*='btn-']{
+    margin:10px 0px;        
+    padding:10px;
+    border: none;
+    background-color: #333;
+    color:white;
+}
+
+.btn_container{
+    display: inline;   
+}
+
+
+
+
+

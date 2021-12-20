@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        setTimeout('alert("HI")', 5000);
+        function showdate() {
+             var currentdate = new Date();
+            document.title = currentdate.toLocaleTimeString();
+        }
+        
+        function start() {
+            t=setInterval("showdate()", 1000);
+        }
+        function stop() {
+            clearInterval(t);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="starttimer" onclick="start();" />
+    <input type="button" value="stoptimer" onclick="stop();" />
+</body>
+</html>

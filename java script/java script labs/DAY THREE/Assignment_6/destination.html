@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+            /* background-color: red; */
+            text-align: center;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius:50% ;            
+        }
+        .image-container{
+            background-color: #ddd;
+            padding:20px;
+        }
+        .user-name{
+            padding:20px;
+            font-size: 36px;
+        }
+
+        .user-name strong:last-child{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="image-container">
+            <img id="myimg" src="male.PNG" alt="loading">
+        </div>
+        <div class="user-name">
+            <strong>welcome</strong>
+            <strong id="user_name">jimmy</strong>
+        </div>
+    </div>
+
+    <script>
+        var userSearch = window.location.search;
+        var search_result = userSearch.split('?').join("").split('&');
+        var clear_result = [];
+        for(var i = 0 ; i < search_result.length ; i++){
+            clear_result.push(search_result[i].split('='));
+        }
+        console.log(clear_result);
+        if(userSearch && clear_result){            
+            if(clear_result[2][0]==='gender'&&
+            clear_result[2][1]==='m'){
+                myimg.src='male.PNG';                
+            }else{
+                myimg.src='famele.PNG';
+            }
+            user_name.style.color=clear_result[3][1];
+            user_name.innerText = clear_result[0][1];
+        }
+    </script>
+</body>
+</html>

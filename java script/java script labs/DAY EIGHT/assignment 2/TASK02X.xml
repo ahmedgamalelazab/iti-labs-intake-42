@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bookstore>
+	<book>
+		<title>Introduction to programming</title>
+		<publisher>ITI</publisher>
+		<isbn>12345</isbn>
+		<price>100</price>
+	</book>
+	<book>
+		<title>Introduction to DB</title>
+		<publisher>MCIT</publisher>
+		<isbn>134545</isbn>
+		<price>50</price>
+	</book>
+	<book>
+		<title>Introduction to CST</title>
+		<publisher>MCIT</publisher>
+		<isbn>5999</isbn>
+		<price>300</price>
+	</book>
+	<book>
+		<title>Introduction to CST - JS</title>
+		<publisher>MCIT</publisher>
+		<isbn>15</isbn>
+		<price>250</price>
+	</book>
+	<book>
+		<title>Introduction to Network</title>
+		<publisher>MCIT</publisher>
+		<isbn>2899</isbn>
+		<price>200</price>
+	</book>
+	<book>
+		<title>Introduction to OS</title>
+		<publisher>ITI</publisher>
+		<isbn>329419</isbn>
+		<price>110</price>
+	</book>
+</bookstore>
