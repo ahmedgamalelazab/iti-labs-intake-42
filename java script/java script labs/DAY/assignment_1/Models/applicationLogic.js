@@ -6,6 +6,9 @@
  
  import {complexCellTextWithImage,generateTableComponent,sortTable,tableSave} from "./table.js";
  
+ var sorted = false;
+
+var rowBuffer;
 
 function applicationStandardTable() {
   return generateTableComponent(
@@ -90,13 +93,19 @@ function applicationLogic(container, table, dataSource) {
             }
             console.log("id name logic here");
             break;
-          case "salary":
+          case "email":
             if (sorted === false) {
               var sortedTable = sortTable(
                 dataSource,
                 table,
                 function (obj1, obj2) {
-                  return obj2.salary - obj1.salary;
+                  if (obj2.email < obj1.email) {
+                    return -1;
+                  }
+                  if (obj2.email > obj1.email) {
+                    return 1;
+                  }
+                  return 0;
                 }
               );
               table = sortedTable;
@@ -107,7 +116,13 @@ function applicationLogic(container, table, dataSource) {
                 dataSource,
                 table,
                 function (obj1, obj2) {
-                  return obj1.salary - obj2.salary;
+                  if (obj1.email < obj2.email) {
+                    return -1;
+                  }
+                  if (obj1.email > obj2.email) {
+                    return 1;
+                  }
+                  return 0;
                 }
               );
               table = sortedTable;

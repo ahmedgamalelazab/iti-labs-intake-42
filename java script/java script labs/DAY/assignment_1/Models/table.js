@@ -121,8 +121,8 @@ function sortTable(dataSource , tableReference , callback){
     "TH",
     complexCellTextWithImage("id"),
     complexCellTextWithImage("name"),
-    `city`,
-    complexCellTextWithImage("salary"),
+    `username`,
+    complexCellTextWithImage("email"),
     `personalImage`,
     `delete`,
     `update`
