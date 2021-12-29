@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<title>Registeration Form</title>
+	</head>
+	<body>
+		<form method="post" action="server.html">
+			<table  width="500" cellspacing="10" cellpadding="10" bgcolor="lightyellow" align="center">
+					<tr>
+						<th colspan="2">Registeration Form</th>
+					</tr>
+					<tr>
+						<th>UserName</th>
+						<td><input type="text" name="username" size="70" /></td>
+					</tr>
+
+					<tr>
+						<th>Userpass</th>
+						<td><input type="password" name="userpass" size="70" /></td>
+					</tr>
+					<tr>
+						<th rowspan="2">Gender</th>
+						<td><input type="radio" name="gender" value="M" checked/> Male</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="gender" value="F"/> Female</td>
+					</tr>
+
+					<tr>
+						<th>University</th>
+						<td>
+							<select name="university">
+								<option value="mans">Mansoura</option>
+								<option value="alex">Alexandria</option>
+								<option value="azhar">El Azhar</option>
+								<option value="tanta" selected>Tanta</option>
+								<option value="zag">Zagazig</option>
+							</select>
+						</td>
+					</tr>					
+
+					<tr>
+						<th>Courses</th>
+						<td>
+							<select multiple name="courses" size="5">
+								<option value="html">Hyper Text Markup Language</option>
+								<option value="xml" selected>Extensible Markup Language</option>
+								<option value="css">Cascading Style Sheet</option>
+								<option value="sql">Structured Query Laguage</option>
+								<option value="mvc" selected>MVC</option>
+								<option value="wpf">Windows Presentation Foundation</option>
+								<option value="wcf">WIndows Communication Focundation</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<th colspan="2">Interests</th>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<table width="100%" >
+								<tr>
+									<td><input type="checkbox" name="interests" value="football" checked/></td>
+									<th>football</th>
+									<td><input type="checkbox" name="interests" value="running"/></td>
+									<th>running</th>
+									<td><input type="checkbox" name="interests" value="swimming" checked/></td>
+									<th>swimming</th>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="interests" value="reading"/></td>
+									<th>reading</th>
+									<td><input type="checkbox" name="interests" value="coding" checked/></td>
+									<th>coding</th>
+									<td><input type="checkbox" name="interests" value="design"/></td>
+									<th>designing</th>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr>
+						<th>UserCV</th>
+						<td><input type="file" name="usercv"/></td>
+					</tr>
+					
+					<tr>
+						<th colspan="2">UserComments</th>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<textarea cols="70" rows="15" name="usercomments"></textarea>
+						</td>
+					</tr>
+
+
+
+
+
+
+
+
+
+					<tr>
+						<td><input type="submit" value="OK" /></td>
+						<td><input type="reset" value="Cancel" /></td>
+					</tr>
+
+
+
+			</table>
+		</form>
+
+
+		<pre>
+
+
+
+
+
+
+
+</pre>
+	</body>
+</html>

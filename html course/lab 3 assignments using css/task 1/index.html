@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <title>
+            assignment one
+        </title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .clr{
+                clear: both;
+            }
+            body{
+                background-image: url(bground.PNG);
+            }
+            .page_container{
+                width: 100%;
+                height: 100%;
+            }
+            
+            .ad_container{
+                
+                margin: 100px auto;
+                width:80%;
+                height:80%;
+                background-color: #f4f4f4;
+                border: 10px groove #8a7f7d;
+                text-align: center;
+                
+            }
+
+           .ad_header{
+               width:80%;
+               height: 20%;
+               background-color: #ffbdad;
+               display: grid;
+               grid-template-columns: 20% auto 20%;
+               margin: 20px auto 10px auto;
+               text-align: center;
+               align-items: center;
+               align-content: center;
+               border: 3px solid #a79a8d;
+           }
+
+           .img_left img{
+               width:50%;
+               height: 90%;
+           }
+          
+           .img_right img{
+                width:50%;
+               height: 90%;
+           }
+
+           .ad_address_container{
+               margin: auto;
+               width:80%;
+               background-color: #ffbdad;
+               text-align: center;
+               border: 3px solid #a79a8d;
+           }
+
+            #mails div{
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .ad_main_section_area{
+                margin: 10px auto;
+                width:80%;
+                height: 50%;
+                background-color: #ffbdad;
+               text-align: left;
+               border: 3px solid #a79a8d;
+
+            }
+
+            .ad_main_section_area h2{
+                text-decoration: underline;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+
+            .ad_main_section_area p{
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .ad_main_section_area ul{
+                margin-top: 10px;
+                margin-left: 60px;
+                list-style-image: url(calc_sample.PNG);
+                text-align: left;
+            }
+
+            .ad_footer{
+                width:80%;
+                margin: 10px auto;
+                background-color:#ffbdad ;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="page_container">
+            <div class="ad_container">
+                <div class="ad_header">
+                   <div class="img_left">
+                       <img src="left_sample.PNG" alt="loading">
+                   </div>
+                   <div id="between_image_text">
+                       <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+                   </div>
+                   <div class="img_right">
+                       <img src="right sample.PNG" alt="loading">
+                   </div>
+                </div>
+                <div class="clr"></div>
+                <div class="ad_address_container">
+                    <div id="mails">
+                        <div>
+                           <a href="#">http://sample.com</a>
+                           <a href="#">http://sample.com</a>
+                           <a href="#">http://sample.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad_main_section_area">
+                    <h2>
+                        Introduction
+                    </h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ratione asperiores deleniti! Minus tempora optio commodi eligendi omnis expedita impedit.</p>
+                    <h2>
+                        Calculators
+                    </h2>
+                    <ul>
+                        <li><a href="#">Grades Calcualtor</a></li>
+                        <li><a href="#">Interest Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="ad_footer">
+                    <h5>
+                        Terps Calculators Inc .&copy;
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

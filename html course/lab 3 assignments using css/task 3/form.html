@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>
+            form assignment
+        </title>
+        <style>
+            *{
+                padding:0;
+                margin:0;
+                box-sizing: border-box;
+            }
+
+            body{
+                background-color: #333;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .formContainer{
+                width:300;
+                background-color: #f4f4f4;
+                margin: 20px auto;
+                padding:4px;
+            }
+
+            .formWrapper{
+                padding: 15px;
+            }
+            .loginContainer{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            #login_facebook{
+                display: flex;
+                background-color: #3b5999;
+                margin: 0 5px 0 5px;
+                padding: 3px;
+                cursor: pointer;
+            }
+            #login_twitter{
+                display: flex;
+                background-color: #02b2e4;
+                margin: 0 5px 0 5px;
+                padding: 3px;
+                cursor: pointer;
+            }
+            #login_facebook img{
+                width:20px;
+                height:20px;
+                display: inline-block;
+                margin-right: 7px;
+            }
+            #login_twitter img{
+                width:20px;
+                height:20px;
+                display: inline-block;
+                margin-right: 7px;
+            }
+            #login_facebook h6{
+                display: flex;
+                text-align: center;
+                align-items: center;
+                color: white;
+            }
+            #login_twitter h6{
+                display: flex;
+                text-align: center;
+                align-items: center;
+                color: white;
+            }
+
+            #or_floating{
+                margin: 15px auto;
+                width: 100%px;
+                text-align: center;
+            }
+            
+            #text{
+                margin: auto;
+                width: 30px;
+                height: 30px;
+                background-color: #cccccc;
+                border-radius: 20px;
+                text-align: center;
+                padding: 5px;
+                color: #333;
+                font-weight: bold;
+            }
+
+            .credentialsContainer{
+                width: 100%;
+            }
+
+            .credentialsContainer input{
+                width: 100%;
+                background: none;
+                padding: 8px;
+                margin: 5px auto;
+                border-color: #e8ebec;
+            }
+
+            .userUtilsContainer{
+                position: relative;
+                text-align: center;
+                height: 30px;
+                margin-top: 10px;
+            }
+            #keep_user_sign{
+                font-size: 12px;
+                position: absolute;
+                left: 0;
+            }
+            
+            #forgotPassword{
+                position: absolute;
+                font-size: 12px;
+                right: 0;
+            }
+
+            .btn{
+                width: 100%;
+                background-color: #3b5999
+                ;color: white;
+                font-weight: bold;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+
+            #signUpInstead{
+                text-align: center;
+            }
+
+            #signUpInstead a{
+                text-decoration: none;
+                color: #02b2e4;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="formContainer">
+            <form action="" method="get">
+                <div class="formWrapper">
+                    <div class="loginContainer">
+                        <div id="login_facebook">
+                            <img src="facebook.png" alt="facebook">
+                            <h6>Login to Facebook</h6>
+                        </div>
+                        <div id="login_twitter">
+                            <img src="twitter.png" alt="twitter">
+                            <h6>Login to Twitter</h6>
+                        </div>
+                    </div>
+                    <!--Or-->
+                    <div id="or_floating">
+                       <div id="text"> Or</div>
+                    </div>
+                    <div class="credentialsContainer">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                    </div>
+                    <div class="userUtilsContainer">
+                        <div id="keep_user_sign">
+                            <input type="checkbox" name="keep_me_sign" id="c_keep_sign">
+                            Keep me signed in
+                        </div>
+                        <div id="forgotPassword">
+                            <p>Forgot you password</p>
+                        </div>
+                        
+                    </div>
+                    <button class="btn">
+                        Login
+                    </button>
+                    <div id="signUpInstead">
+                        <p>
+                            Not a member ? <a href="#">
+                                Sign up now!
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>

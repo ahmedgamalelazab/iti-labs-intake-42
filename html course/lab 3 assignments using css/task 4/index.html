@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>
+            table assignment
+        </title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .table_cotnainer{
+                width: 100%;
+                border: 3px solid #333;
+            }
+            .header_grid{
+                display: grid;
+                grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+                padding: 10px;
+                background-color: #4f81bd;
+                text-align: center;
+                border-bottom: 3px solid #333;
+            }
+            .header_grid div{
+                color:white;
+            }
+            .table_details{
+                padding:10px;
+                text-align: center;
+                color:grey;
+                text-decoration:underline;
+                font-style: italic;
+            }
+            .innerTableSample{
+                display:grid;
+                grid-template-columns:  0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+                /* padding:10px; */
+                background-color: #333;
+                color:white;
+                text-align: center;
+            }
+            #first_sample div{
+                background-color: #bbcce4;
+                padding:10px;
+                border: 1px solid #333;
+                color:#333;
+                font-weight: 500;
+            }
+            #first_sample div:first-child,#first_sample div:last-child{
+                border-left: none;
+                background-color: #fff;
+                color:grey;
+                text-decoration:underline;
+                font-style:italic;
+            }
+            #second_sample div{
+                background-color: #7995B8;
+                padding:10px;
+                border: 1px solid #333;
+                color:#333;
+                font-weight: 500;
+            }
+            #second_sample div:first-child,#second_sample div:last-child{
+                border-left: none;
+                background-color: #fff;
+                color:grey;
+                text-decoration:underline;
+                font-style:italic;
+            }
+            #last_sample div{
+                background-color: #bbcce4;
+                padding:10px;
+                border: 1px solid #333;
+                color:#333;
+                font-weight: 500;
+            }
+            #last_sample div:first-child,#last_sample div:last-child{
+                border-left: none;
+                background-color: #fff;
+                color:grey;
+                text-decoration:underline;
+                font-style:italic;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="table_cotnainer">
+            <div class="header_grid">
+                <div></div>
+                <div>Team Name</div>
+                <div>Start Date</div>
+                <div>End Date</div>
+                <div>Show on Roster</div>
+                <div></div>
+            </div>
+            <div class="table_details">Move To another Team</div>
+            <div class="innerTableSample" id="first_sample">
+                <div>Edit</div>
+                <div>Team A</div>
+                <div>19/01/2012</div>
+                <div>Ongoing</div>
+                <div>yes</div>
+                <div>delete</div>
+            </div>
+            <div class="innerTableSample" id="second_sample">
+                <div>Edit</div>
+                <div>Team B</div>
+                <div>24/10/2011</div>
+                <div>18/01/2012</div>
+                <div>no</div>
+                <div>delete</div>
+            </div>
+            <div class="table_details">Not in a team between 12/08/2011 and 23/10/2011</div>
+            <div class="innerTableSample" id="last_sample">
+                <div>Edit</div>
+                <div>Team B</div>
+                <div>24/10/2011</div>
+                <div>18/01/2012</div>
+                <div>no</div>
+                <div>delete</div>
+            </div>
+            <div class="table_details">Add to a team Prior to 01/01/2011</div>
+        </div>
+
+    </body>
+</html>

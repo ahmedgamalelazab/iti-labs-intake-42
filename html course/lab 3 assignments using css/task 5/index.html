@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <title>form v2 assignment</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .formContainer {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        border: 2px solid #333;
+      }
+      .form_header {
+        width: 100%;
+        background-color: red;
+      }
+      .form_header img {
+        width: 100%;
+        text-align: center;
+      }
+      .formDescription {
+        width: 100%;
+        text-align: left;
+      }
+      .formDescription img {
+        margin: 10px 20px;
+        width: 40px;
+        height: 40px;
+      }
+      .formDescription h5 {
+        margin: 10px 20px;
+        color: green;
+        font-weight: bold;
+      }
+      #userInputUtilesForm {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        text-align: left;
+        border-bottom: 1px dotted #333;
+        padding: 5px;
+      }
+      #userInputUtilesForm div {
+        margin: 5px 20px;
+      }
+      #streetAddress {
+        grid-column: 1/-1;
+      }
+      label {
+        display: block;
+        margin: 10px 0px;
+      }
+      input {
+        width: 100%;
+      }
+      #firstItemInGrid {
+        grid-column: 1/3;
+      }
+      .paymentContainer{
+          display:grid;
+          grid-template-columns: repeat(2,1fr);
+          text-align: left;
+      }
+      .paymentContainer div{
+          margin: 3px 10px;
+      }
+      select{
+          width: 100%;
+      }
+      .formFooter{
+          margin:20px 0px 0px 0px;
+          background-color: #95ca57;
+          width: 100%;
+          text-align: left;
+          padding:20px;
+      }
+      #btn{
+          width:90px;
+          height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="get">
+        <div class="formContainer">
+            <div class="form_header">
+              <img src="header.png" alt="header" />
+            </div>
+            <div class="formDescription">
+              <img src="profite.png" alt="profit" />
+              <h5>non-profit organization</h5>
+            </div>
+            <div id="userInputUtilesForm">
+              <div id="firstItemInGrid">
+                <label for="name">name:</label>
+                <input type="text" name="name" id="client_name" />
+              </div>
+              <div>
+                <label for="phonenumber:"> phone number </label>
+                <input type="number" name="phonenumber" id="client_phone" />
+              </div>
+              <div id="streetAddress">
+                <label for="streetAddress"> street address: </label>
+                <input type="text" name="streetAddress" id="client_streetAddress" />
+              </div>
+              <div>
+                <label for="city">city:</label>
+                <input type="text" name="city" id="client_city" />
+              </div>
+              <div>
+                <label for="state">state:</label>
+                <input type="text" name="state" id="client_state" />
+              </div>
+              <div>
+                <label for="zipCode">zip code:</label>
+                <input type="text" name="zipCode" id="client_zipCode" />
+              </div>
+            </div>
+            <div class="formDescription">
+              <img src="contact.png" alt="profit" />
+              <h5>sponsor contact information</h5>
+            </div>
+            <div id="userInputUtilesForm">
+              <div id="firstItemInGrid">
+                <label for="firstname">first name:</label>
+                <input type="text" name="firstname" id="client_firstname" />
+              </div>
+              <div>
+                <label for="lastname:"> last name: </label>
+                <input type="text" name="lastname" id="client_lastname" />
+              </div>
+              <div id="firstItemInGrid">
+                <label for="phonenumber">phone Number:</label>
+                <input type="number" name="phonenumber" id="client_phoneNumber" />
+              </div>
+              <div>
+                <label for="lastname:"> last name: </label>
+                <input type="text" name="lastname" id="client_lastname" />
+              </div>
+              <div id="streetAddress">
+                <label for="streetAddress"> street address: </label>
+                <input type="text" name="streetAddress" id="client_streetAddress" />
+              </div>
+              <div>
+                <label for="city">city:</label>
+                <input type="text" name="city" id="client_city" />
+              </div>
+              <div>
+                <label for="state">state:</label>
+                <input type="text" name="state" id="client_state" />
+              </div>
+              <div>
+                <label for="zipCode">zip code:</label>
+                <input type="text" name="zipCode" id="client_zipCode" />
+              </div>
+            </div>
+            <div class="formDescription">
+                <img src="dollar.png" alt="donation" />
+              </div>
+              <div class="paymentContainer">
+                  <div class="donationAmount">
+                      <label for="donation_amount">
+                          donation Amount:
+                      </label>
+                      <select name="donation_amount" id="user_donation_amount">
+                          <option value="tenDollars">10$</option>
+                          <option value="fiftyDollars">50$</option>
+                          <option value="fiveHundredDollars">500$</option>
+                          <option value="thousandDollars">1000$</option>
+                      </select>
+                  </div>
+                  <div class="paymentMethod">
+                      <label for="paymentMethod">
+                          payment Method:
+                      </label>
+                      <select name="paymentMethod" id="user_paymentMethod">
+                          <option value="MasterCard">Master Card</option>
+                          <option value="VodafoneCash">Vodafone Cash</option>
+                          <option value="CIB CARD">CIB CARD</option>
+                          <option value="another">another</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="formFooter">
+                  <input type="submit" value="submit" id="btn">
+              </div>
+          </div>
+    </form>
+  </body>
+</html>

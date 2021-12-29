@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FixedLayout</title>
+    <style>
+        /* reset negative spaces : margin and padding : 0*/
+        *{
+            padding:0;
+            margin:0;
+        }
+        #mainwrapper{
+            width:800px;
+            border:1px solid black;
+            padding:5px;
+            margin:10px auto;
+        }
+        #mainheader,#mainfooter{
+            padding:5px;
+            border:1px solid black;
+            background-color:lightgray;
+            text-align:center;
+        }
+        li{
+            list-style:none;
+            display:inline-block;
+            width:120px;
+            text-align:center;
+        }
+        li:hover{
+            cursor:pointer;
+            background-color:lightgray;
+        }
+        #mainnav{
+            padding:5px;
+            background-color:lightblue;
+        }
+       #mainsection{
+           width:550px;
+           border:1px solid black;
+           padding:5px;
+           margin:5px 0;
+           float:left;
+       }
+       article{
+           border:1px solid black;
+           margin-top:5px;
+       }
+       #mainaside{
+           float:right;
+           border:1px solid black;
+           margin:5px 0;
+           padding:5px;
+           width:200px;
+       }
+       #mainfooter{
+           clear:both;
+       }
+       #mainaside p{
+           border:1px solid black;
+           padding:5px;
+           margin:5px;
+       }
+       #mainaside p:nth-child(odd){
+           background-color:lightpink;
+       }
+       #mainaside p:nth-child(even){
+           background-color:lightgreen;
+       }
+    </style>
+</head>
+<body>
+    <div id="mainwrapper">
+        <header id="mainheader">
+            <h4>Header Of Page</h4>
+        </header>
+        <nav id="mainnav">
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <section id="mainsection">
+            <article>
+                <header>
+                    <h5>Article One Header</h5>
+                </header>
+                <p>Article One Body</p>
+                <footer>CopyRights &copy; Reserved  TO Author One</footer>
+            </article>
+            <article>
+                <header>
+                    <h5>Article Two Header</h5>
+                </header>
+                <p>Article Two Body</p>
+                <footer>CopyRights &copy; Reserved  TO Author Two</footer>
+            </article>
+        </section>
+        <aside id="mainaside">
+            <p>ITI Mansoura</p>
+            <p>ITI Alex</p>
+            <p>ITI Ismailia</p>
+            <p>ITI Smart</p>
+        </aside>
+        <footer id="mainfooter">
+            <p>CopyRights Reserved to ITI Mansoura Students</p>
+        </footer>
+    </div>
+</body>
+</html>

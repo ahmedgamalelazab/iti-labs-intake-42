@@ -1,0 +1,9 @@
+﻿#mainheader, #mainfooter {
+
+    background-color: lightpink;
+
+}
+#mainaside {
+ 
+    display: none;
+}

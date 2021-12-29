@@ -1,0 +1,287 @@
+<html>
+    <head>
+        <title>
+            bonus assignment
+        </title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                padding:0px;
+                margin:0px;
+                background-image: url(background.PNG);
+                font-family: monospace;
+            }
+            .header{
+                width: 100%;
+            }
+            .header img{
+                width: 100%;
+            }
+            #titleContainer{
+                font-size: 14px;
+                text-align: center;
+            }
+            .ContentContainer{
+                width: 80%;
+                background-color: #333;
+                color:#fff;
+                margin:auto;
+                display: grid;
+                grid-template-columns: 4fr 2fr;
+            }
+            .leftContent{
+                
+                background-image: url(background.PNG);
+            }
+            .rightContent{
+                background-color: #a2b964;
+            }
+            .rightContent img{
+                display:block;
+                width: 100%;
+            }
+            .contentDescription{
+                color:#000;
+                font-weight: bold;
+            }
+            .contentDescription h6{
+                font-size: 14px;
+                text-align: left;
+                font-weight: 800;
+                padding: 0px;
+                margin:10px 0px 5px 10px;
+            }
+            .contentDescription p{
+                text-align: left;
+                padding: 0px;
+                margin:0px 3px 2px 50px;
+            }
+            .leftCornerHeader{
+                background-color: #2a411f;
+            }
+            .leftCornerHeader{
+                display:grid;
+                grid-template-columns: 1fr 2fr 3fr repeat(3,2fr);
+                align-items: center;
+            }
+            .leftCornerHeader img{
+                height:70px;
+                width: 80px;
+                padding:0px;
+            }
+            .leftCornerHeader h3{
+                color:yellow;
+                padding: 0px;
+                margin: 0px;
+            }
+            #header_apple{
+                text-align: center;
+                padding:10px;
+            }
+            .innerHeaderNumber h1{
+                font-size: 50px;
+                color:red;
+                font-weight:bold;
+            }
+            .reviewCardsContainer{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .reviewSample{
+                border: 2px solid grey;
+                color:black;
+                font-weight: bold;
+                padding:10px;
+                margin: 10px;
+                font-size: 18px;
+            }
+            .reviewSample img{
+                width: 30px;
+                height: 30px;
+            }
+            .clientReview{
+                display:grid;
+                grid-template-columns: 2fr 10fr repeat(3 , 1fr);
+            }
+            .clientText{
+                color:black;
+                font-weight: bold;
+            }
+            .clientReview{
+                padding:10px;
+            }
+            .contentFooter{
+                width: 80%;
+                background-color: #a2b964;
+                padding:10px;
+                margin: 0px auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img src="header.PNG" alt="header">
+        </div>
+        <div id="titleContainer">
+            <h1>
+                The Princess Bride (1987)
+            </h1>
+        </div>
+        <div class="ContentContainer">
+            <div class="leftContent">
+                <!--Left Content-->
+                <!--coding the left content-->
+                <div class="leftCornerHeader">
+                    <div id="header_apple">
+                        <img src="apple.png" alt="loading apple">
+                        <h3>
+                            FRESH
+                        </h3>
+                    </div>
+                    <div class="innerHeaderNumber">
+                        <h1>95%</h1>
+                    </div>
+                    <div class="totalReviews">
+                        (17 reviews total)
+                    </div>
+                </div>
+                <div class="reviewCardsContainer">
+                    <div class="reviewContainer">
+                        <div class="reviewSample">
+                            <img src="apple.png" alt="apple">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum molestiae beatae facilis dignissimos excepturi vel exercitationem! Accusantium voluptate dolorem molestias quis repellendus rem aperiam.
+                        </div>
+                        <div class="clientReview">
+                            <img src="client.PNG" alt="client">
+                            <div class="clientText">
+                                Lorem ipsum dolor sit amet consectetur adipisicing ?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviewContainer">
+                        <div class="reviewSample">
+                            <img src="apple.png" alt="apple">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum molestiae beatae facilis dignissimos excepturi vel exercitationem! Accusantium voluptate dolorem molestias quis repellendus rem aperiam.
+                        </div>
+                        <div class="clientReview">
+                            <img src="client.PNG" alt="client">
+                            <div class="clientText">
+                                Lorem ipsum dolor sit amet consectetur adipisicing ?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviewContainer">
+                        <div class="reviewSample">
+                            <img src="apple.png" alt="apple">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum molestiae beatae facilis dignissimos excepturi vel exercitationem! Accusantium voluptate dolorem molestias quis repellendus rem aperiam.
+                        </div>
+                        <div class="clientReview">
+                            <img src="client.PNG" alt="client">
+                            <div class="clientText">
+                                Lorem ipsum dolor sit amet consectetur adipisicing ?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviewContainer">
+                        <div class="reviewSample">
+                            <img src="apple.png" alt="apple">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum molestiae beatae facilis dignissimos excepturi vel exercitationem! Accusantium voluptate dolorem molestias quis repellendus rem aperiam.
+                        </div>
+                        <div class="clientReview">
+                            <img src="client.PNG" alt="client">
+                            <div class="clientText">
+                                Lorem ipsum dolor sit amet consectetur adipisicing ?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviewContainer">
+                        <div class="reviewSample">
+                            <img src="apple.png" alt="apple">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum molestiae beatae facilis dignissimos excepturi vel exercitationem! Accusantium voluptate dolorem molestias quis repellendus rem aperiam.
+                        </div>
+                        <div class="clientReview">
+                            <img src="client.PNG" alt="client">
+                            <div class="clientText">
+                                Lorem ipsum dolor sit amet consectetur adipisicing ?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviewContainer">
+                        <div class="reviewSample">
+                            <img src="apple.png" alt="apple">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum molestiae beatae facilis dignissimos excepturi vel exercitationem! Accusantium voluptate dolorem molestias quis repellendus rem aperiam.
+                        </div>
+                        <div class="clientReview">
+                            <img src="client.PNG" alt="client">
+                            <div class="clientText">
+                                Lorem ipsum dolor sit amet consectetur adipisicing ?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviewContainer">
+                        <div class="reviewSample">
+                            <img src="apple.png" alt="apple">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum molestiae beatae facilis dignissimos excepturi vel exercitationem! Accusantium voluptate dolorem molestias quis repellendus rem aperiam.
+                        </div>
+                        <div class="clientReview">
+                            <img src="client.PNG" alt="client">
+                            <div class="clientText">
+                                Lorem ipsum dolor sit amet consectetur adipisicing ?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightContent">
+                <!--Right Content-->
+                <img src="movieClip.PNG" alt="movie">
+                <div class="contentDescription">
+                    <h6>STARRING</h6>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ad.</P>
+                </div>
+                <div class="contentDescription">
+                    <h6>STARRING</h6>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ad.</P>
+                </div>
+                <div class="contentDescription">
+                    <h6>STARRING</h6>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ad.</P>
+                </div>
+                <div class="contentDescription">
+                    <h6>DIRECTOR</h6>
+                    <P>Rob Reiner</P>
+                </div>
+                <div class="contentDescription">
+                    <h6>PRODUCER</h6>
+                    <P>Arnold Scheinman ,Rob Reiner</P>
+                </div>
+                <div class="contentDescription">
+                    <h6>SCREENWRITER</h6>
+                    <P>William Goldman</P>
+                </div>
+                <div class="contentDescription">
+                    <h6>RATING</h6>
+                    <P>PG</P>
+                </div>
+                <div class="contentDescription">
+                    <h6>RELEASE DATE</h6>
+                    <P>sEPTEMBER 25, 1987 (USA)</P>
+                </div>
+                <div class="contentDescription">
+                    <h6>SYNOPSIS</h6>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quae, mollitia totam numquam commodi iste.</P>
+                </div>
+                <div class="contentDescription">
+                    <h6>RELEASE COMPANY</h6>
+                    <P>20th Century fOX</P>
+                </div>
+            </div>
+        </div>
+        <div class="contentFooter">
+            <p>(1-7) of 17</p>
+        </div>
+    </body>
+</html>
