@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(function () {
+            $(":text:first").keyup(function () {
+                let userinput = $(this).val();
+                $("tr").each(function (i,el) {
+                    //$()this=>tr
+                    let currenttdvalue = $(this).children("td:first").text();
+                    if (currenttdvalue.toLowerCase().indexOf(userinput.toLowerCase()) != -1) {
+                        $(this).css("color", "green").show(1000);
+                    } else {
+                        $(this).css("color", "red").hide(1000);
+                    }
+
+                });
+
+            });//end of keyup
+
+        });//end of load
+    </script>
+</head>
+<body>
+    <input type="text"/>
+    <table>
+        <tr>
+            <td>Ahmed Mohamed</td>
+        </tr>
+        <tr>
+            <td>mona moustafa</td>
+        </tr>
+        <tr>
+            <td>nasr kassem</td>
+        </tr>
+        <tr>
+            <td>ahmed</td>
+        </tr>
+        <tr>
+            <td>nasr Mohamed</td>
+        </tr>
+
+    </table>
+</body>
+</html>

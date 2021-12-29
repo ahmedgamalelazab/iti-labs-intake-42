@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(function () {
+            // $(selector).eventname(function(){});// direct registeration
+            //$("li").click(function () { $(this).css("color", "red"); });//end of click
+            //$("li").dblclick(function () { $(this).css("background-color", "yellow"); });
+
+
+            // method chaining 
+            //$("li").click(function () { $(this).css("color", "red"); })
+            //    .dblclick(function () { $(this).css("background-color", "yellow"); })
+            //    .mouseout(function () { $(this).css("color","black")})
+
+
+            //$("li").on("click", funone);
+            //$("li").on("click",funtwo);
+
+            //function funone() {
+            //    $(this).css("color", "red");
+            //}
+            //function funtwo() {
+            //    //$(this).css("color", "red");
+            //    console.log("fun two is running");
+            //}
+            //$(":button:first").click(function () { $("li").off("click"); });//, funtwo); });
+
+
+            //$("li").on("click", function () { console.log("Console Write"); })
+            //$("li").on("dblclick", function () { console.log("Console Write"); })
+            //$("li").on("mouseover", function () { console.log("Console Write");})
+
+
+            //$("li").on("click dblclick mouseover", function () { console.log("Console Write"); })
+
+
+
+            //$("li").on({
+            //    "click": function () { console.log("click");},
+            //    "dblclick": function () {console.log("dblclick"); },
+            //    "mouseover": function () {console.log("mouseover"); }
+            //});
+
+
+            // delegation registeration : future elements 
+
+
+            //$("ul").on(
+            //    { "click": function () { console.log("clicked"); } }, "li");
+
+
+        });//end of load
+    </script>
+</head>
+<body>
+    <button>Off Click FunTwo</button>
+    <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+</body>
+</html>

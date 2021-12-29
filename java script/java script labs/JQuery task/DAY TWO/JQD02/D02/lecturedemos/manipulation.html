@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.6.0.js"></script>
+    <style>
+        p{
+            border:1px solid black;
+            background-color:yellow;
+        }
+    </style>
+    <script>
+        $(function () {
+
+            // inside
+
+            // append
+            //$("li:first").append("<b>ITI<b>");
+            //appendTo
+            //$("<b>ITI</b>").appendTo($("li"));
+            //prepend
+            //$("li").prepend($("<b>ITI</b>"));
+            //prependTo
+
+
+            // outside
+            // after
+            //$("li").before($("<b>ITI</b>"))
+            //$("<b>ITI</b>").insertAfter($("li"));
+            // before
+            //insertAfter
+            //insertBefore
+
+
+
+            //arround
+            //wrap
+            //$("li").wrapAll("<p>");
+            //wrapAll
+            //wrapInner
+            let deletedul;
+            $("li").click(function () { alert(`you clicked : ${$(this).text()}`) });
+
+            // rmoving :  empty , remove , detach
+            $(":button:eq(0)").click(function () {
+               // $("ul").empty();
+            });//end of empty
+
+            $(":button:eq(1)").click(function () {
+                deletedul=$("ul").remove();
+            });//end of Remove
+
+
+            $(":button:eq(2)").click(function () {
+                deletedul=$("ul").detach();
+            });//end of Detach
+
+            $(":button:eq(3)").click(function () {
+                $("div").append(deletedul);
+            });//end of Detach
+
+
+
+        });//end of load
+    </script>
+</head>
+<body>
+    <button>Empty</button>
+    <button>Remove</button>
+    <button>Detach</button>
+    <button>Recover</button>
+    <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li>iti</li>
+        <li>mcit</li>
+    </ul>
+    <div>
+
+    </div>
+</body>
+</html>
