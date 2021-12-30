@@ -42,7 +42,7 @@ $(function () {
             setTimeout(function () {
               resolve("finished");
               $(".loading").hide();
-            }, 2000);
+            }, 5000);
           });
         })();
 
