@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        :root{
+            --mycolor:red;
+            --borderblue:2px solid blue;
+            --borderred:2px solid var(--mycolor);
+        }
+        section{
+            border:2px solid black;
+            padding:10px;
+            margin:10px;
+        }
+        #sectionone{
+            /*border-color:red;*/
+            /*border-color:var(--mycolor);*/
+            border:var(--borderred);
+        }
+        #paraone{
+            /*color:red;*/
+            color:var(--mycolor);
+                        border:var(--borderred);
+
+        }
+        h5{
+            /*background-color:red;*/
+            background-color:var(--mycolor);
+        }
+    </style>
+</head>
+<body>
+    <section id="sectionone">
+        <p id="paraone">p One In Section One</p>
+        <p>p Two In Section One</p>
+        <p>p Three In Section One</p>
+    </section>
+    <section id="sectiontwo">
+        <h5>Header</h5>
+    </section>
+</body>
+</html>

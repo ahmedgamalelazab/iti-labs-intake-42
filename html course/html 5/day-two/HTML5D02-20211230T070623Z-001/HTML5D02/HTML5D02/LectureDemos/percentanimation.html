@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        @keyframes sectionanimation{
+            0%{
+                top:10px;
+            left:10px;
+            background-color:red;
+            }
+            25%{
+                left:500px;
+                top:10px;
+                background-color:yellow;
+            }
+            75%{
+                left:500px;
+                top:400px;
+                background-color:pink;
+            }
+            90%{
+                left:10px;
+                top:400px;
+                background-color:blue;
+            }
+        }
+        section{
+            position:absolute;
+            
+            width:100px;
+            height:100px;
+            animation:sectionanimation;
+            animation-duration:4s;
+            animation-iteration-count:infinite;
+        }
+        section:hover{
+            animation-play-state:paused;
+        }
+    </style>
+</head>
+<body>
+    <section></section>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /*declara animation using @keyframes*/
+        @keyframes sectionanimation {
+            /*%percent  % , percent from duration time*/
+            10%{
+                background-color:red;
+            }
+            40%{
+                background-color:yellow;
+            }
+            80%{
+                background-color:blue;
+            }
+            99%{
+                background-color:magenta;
+            }
+        }
+
+        section {
+            width:300px;
+            height:300px;
+            background-color:lightcoral;
+            animation: sectionanimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+    </style>
+</head>
+<body>
+    <section></section>
+</body>
+</html>

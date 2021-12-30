@@ -1,0 +1,30 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+@keyframes movingAnimation {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 500px; top: 0px;}
+    50%  {background: blue; left: 500px; top: 300px;}
+    75%  {background: green; left: 0px; top: 300px;}
+    100% {background: red; left: 0px; top: 0px;}
+  }
+
+
+  div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: movingAnimation 5s  infinite;
+    /* animation-direction: alternate; */
+  }
+
+  div:hover{
+      animation-play-state: paused;
+  }
+  

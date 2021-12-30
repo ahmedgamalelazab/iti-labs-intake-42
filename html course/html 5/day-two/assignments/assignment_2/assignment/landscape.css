@@ -1,0 +1,177 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+.main-section{
+    width: 80%;
+    /* display:-webkit-box; */
+    /* display:flex; */
+
+display:flex;    /* background-color: #333; */
+    color:#333;
+    margin: auto;
+    height:600px;
+    padding:20px;
+    border: 5px yellow solid;
+    border-radius: 30px;
+    box-shadow: rgb(69, 255, 94) 10px 10px 120px inset, rgb(218, 24, 192) 5px 5px 10px;
+    transition: all 6s;
+
+}
+
+.left-section{
+    width: 40%;
+    /* background-color: red; */
+    overflow: scroll;
+    border: 7px black solid;
+    border-radius: 30px;
+    margin-right: 10px;
+    padding:10px;
+    box-shadow: rgb(252, 255, 103) 10px 10px 120px inset, yellow 5px 5px 10px;
+}
+
+.aside-content{
+    /* -webkit-box-flex:1; */
+    flex : 1;
+    /* background-color: green; */
+    /* text-align: center; */
+    overflow: scroll;
+    text-align: center;
+    border: 7px blue solid;
+    border-radius: 30px;
+    margin-left: 10px;
+    box-shadow: rgb(145, 255, 145) 10px 10px 120px inset, green 5px 5px 10px;
+}
+
+.left-section-container{
+    /* display: -webkit-box; */
+    display:flex;
+    /* background-color: #ddd; */
+}
+
+.col{
+    word-wrap: normal; 
+    /* -webkit-box-flex:1; */
+    flex : 1;
+    text-align: center;
+    padding:10px;
+
+}
+
+.col:nth-child(2){
+    border-left: 2px red solid;
+    border-right: 2px red solid;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+}
+
+img{
+    width:90px;
+    height:90px;
+    margin:10px 10px;
+    border: 2px blue solid;
+    box-shadow: rgb(10, 5, 255) 10px 10px 120px inset, rgb(218, 24, 192) 5px 5px 10px;
+    transition: all 3s;
+}
+
+
+mark{
+    background-color: red;
+    color:#333;
+}
+
+
+/*effect section*/
+
+.main-section:hover{
+    transform: skewX(15deg);
+}
+
+.main-section:active{
+    transform: scale(0.5);
+    box-shadow: rgb(10, 5, 255) 10px 10px 120px inset, rgb(251, 32, 69) 5px 5px 10px;
+}
+
+img:hover{
+    transform: scale(1.3);
+}
+
+img:active{
+    transform: scale(3);
+}
+
+p:hover{
+    text-decoration: underline;
+}
+
+mark:hover{
+    background-color: yellow;
+    text-decoration: underline;
+}
+
+mark:active{
+    background-color: green;
+}
+
+/*Media queries*/
+
+@media screen and (max-width : 800px){
+
+   
+    .left-section{
+        font-size: 8px;
+    }
+
+
+}
+
+@media screen and (max-width : 600px){
+
+   
+    .left-section{
+        font-size: 5px;
+    }
+
+
+    img:hover{
+        transform: scale(1);
+    }
+    
+    img:active{
+        transform: scale(1.5);
+        border: 2px black dashed;
+    }
+
+    .main-section:hover{
+        transform: skewX(0deg);
+    }
+
+    ul li{
+        transition: all 2s;
+    }
+
+    ul li{
+        display: block;
+        transform: rotate(20deg);
+                
+    }
+
+
+    ul li:hover{
+        display: block;
+       transform: rotate(0deg);
+                
+    }
+
+}
