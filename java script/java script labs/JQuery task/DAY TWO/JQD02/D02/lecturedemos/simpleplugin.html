@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(function () {
+            $.fn.extend({
+                "greenify": function () {
+                    $(this).css("color", "green");
+                    return $(this);
+                }
+            });
+
+            //$("li:first").css("color", "red").myfun();
+            $("li:first").greenify().css("background-color","yellow");
+
+
+            //function myfun() {
+            //    console.log("Hello");
+            //}
+        });//end of load
+    </script>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+</body>
+</html>

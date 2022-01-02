@@ -162,7 +162,7 @@ function applicationLogic(container, table, dataSource) {
         break;
       default:
         e.target.addEventListener("dblclick", function () {
-          rowBuffer = e.target;
+          rowBuffer = e.target;          
         });
         break;
     }

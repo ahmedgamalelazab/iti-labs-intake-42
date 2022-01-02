@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment_4</title>
+    <script src="jquery-3.6.0.js"></script>
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+    <script src="app.js"></script>
+    <style>
+      .container {
+        width: 80%;
+        background-color: #fff;
+        color: #333;
+        padding: 10px;
+        margin: auto;
+      }
+
+      .box-container{
+        display: flex;
+        /* height: 200px; */
+        /* background-color: red; */
+      }
+
+      .bts-container{
+          display: flex;
+          margin:10px 0px;
+      }
+
+      .left-box,
+      .right-box {
+        flex: 1;
+        height: 100px;
+        background-color: #fff;
+        border: 2px solid black;
+        margin:10px 5px;
+        overflow: scroll;
+      }
+
+      .left-btn-container{
+          text-align: right;
+          flex:1;
+          height:10px;
+      }
+
+      .right-btn-container{
+          text-align: left;
+          flex:1;
+          height:10px;
+      }
+
+      .form-footer-container{
+          display:flex;
+          margin: 10px 0px;
+      }
+
+      .left-content{
+          flex:1;
+          text-align: left;
+      }
+
+      .right-content{
+          flex:1;
+          text-align: center;
+      }
+
+    
+
+      
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-container">
+        <div class="left-box">
+          <!-- we will put the list of courses -->
+          <div class="course-list">
+              <ul class="course-list-ul">
+                 
+              </ul>
+          </div>
+        </div>
+        <div class="right-box">
+          <!-- we will put the list of shifted courses -->
+          <div class="added-course-list">
+            <ul class="added-course-list-ul">
+                 
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bts-container">
+        <div class="left-btn-container">
+          <button class="left-button"><</button>
+        </div>
+        <div class="right-btn-container">
+          <button class="right-button">></button>
+        </div>
+      </div>
+      <div class="form-footer-container">
+        <div class="left-content">
+          <label for="course-name">Add Course</label>
+        </div>
+        <div class="right-content">
+          <input type="text" name="course-name" id="course-name" />
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

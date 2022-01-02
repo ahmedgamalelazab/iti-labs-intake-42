@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+
+            //let alldivs = $("div").filter(function () { return $(this).width() > 100; });
+            //console.log(alldivs);
+            //$("div").filter(function () { return $(this).width() > 100; }).each(function () {
+
+            //    $(this).css("background-color", "yellow");
+            //});
+
+
+            // effects :
+            // show , hide() , fadeout ,fadein , fadetoggle,
+
+
+
+            // select button
+            $("input:eq(0)").click(function () {
+
+                $("div").fadeOut(3000, "", function () { alert('fadded out completed');});
+
+            });//end of click for btnzero
+            $("input:eq(1)").click(function () {
+
+                $("div").fadeIn(3000);//, "", function () { alert('fadded out completed');});
+
+            });//end of click for btnone
+
+
+            $("input:eq(2)").click(function () {
+
+                $("div").fadeToggle(3000);//, "", function () { alert('fadded out completed');});
+
+            });//end of click for btnthree
+
+
+             $("input:eq(3)").click(function () {
+
+                 $("div").slideUp(3000);//, "", function () { alert('fadded out completed');});
+
+             });//end of click for btnthree
+             $("input:eq(4)").click(function () {
+
+                $("div").slideDown(3000);//, "", function () { alert('fadded out completed');});
+
+            });//end of click for btnthree
+
+
+            //$("div").animate({
+            //    "width": "+=100px",
+            //    "height": "-=100px",
+            //    "background-color":"red"
+            //}, 2000);
+
+            $("div").animate({ "width": "200px" }, 2000);
+            $("div").animate({ "height": "200px" }, 2000);
+            $("div").animate({ "border-width": "5px" }, 2000);
+            $("div").animate({ "border-radius": "50%" }, 2000);
+
+
+        });//end of load
+    </script>
+    <style>
+        div {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            height:300px;
+            width: 300px;
+            background-color:lightpink;
+          
+        }
+
+      /*  #divone {
+            width: 400px;
+        }
+
+        #divthree {
+            width: 200px;
+        }*/
+    </style>
+</head>
+<body>
+    <input type="button" value="Fadeout" />
+    <input type="button" value="Fadein" />
+    <input type="button" value="Fadetoggle" />
+    <input type="button" value="slideUp" />
+    <input type="button" value="Slidedown" />
+    <div>
+
+    </div>
+    <!--<div id="divone">
+
+    </div>
+    <div id="divtwo"></div>
+    <div id="divthree"></div>-->
+</body>
+</html>

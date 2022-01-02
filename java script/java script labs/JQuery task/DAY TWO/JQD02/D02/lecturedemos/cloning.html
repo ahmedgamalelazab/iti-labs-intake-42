@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(function () {
+            $("span").click(function () {
+                $(this).fadeOut(500).fadeIn(200);
+            });//end of click for span
+
+            ////$("li").append($("span"));
+           $("li").append($("span").clone(true));
+
+            //clone()
+            //clone(true)
+
+
+        });//end of load
+    </script>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li>iti</li>
+        <li>mcit</li>
+    </ul>
+    <span style="font-size:30px;color:red;">&hearts;</span>
+</body>
+</html>

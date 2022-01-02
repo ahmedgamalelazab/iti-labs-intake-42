@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment_3</title>
+    <script src="jquery-3.6.0.js"></script>
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+    <script src="app.js"></script>
+    <style>
+        table{
+            width:50%;
+            border: 1px solid black;            
+            text-align: center;
+        }
+        tr:nth-child(1){
+            background-color: darkblue;
+            color:#fff;
+        }
+        td{
+            padding:10px;
+        }
+
+        .form-container{
+            background-color: #333;
+            color: #fff;
+            padding:10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <form action="">
+          <label for="news">sport</label>
+          <input type="radio" name="news" id="news-sport" value="sport" />sport
+          <input
+            type="radio"
+            name="news"
+            id="news-social"
+            value="social"
+          />social
+          <input
+            type="radio"
+            name="news"
+            id="news-politic"
+            value="politic"
+          />politic
+          <br>
+          <br>
+          <label for="news-name">news</label>
+          <input type="text" name="news-name" id="news-name">
+          <br>
+          <br>
+          <label for="news-search">search</label>
+          <input type="text" search="news-search" id="news-search">
+          <br>
+          <br>                
+        </form>
+        <button class="data-submitter">Add</button>
+        <br>          
+        <br>   
+        <div class="data-container">
+            <table>
+                <tr>
+                    <td>serial</td>
+                    <td>topic</td>
+                    <td>category</td>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
