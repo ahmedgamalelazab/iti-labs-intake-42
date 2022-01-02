@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body{
+            text-align: center;
+        }
+        div{
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 70vw;
+            padding: 15px;
+            margin: 25px auto;
+            display: grid;
+            grid-template-areas: "section"
+                                 "section";
+            gap:15px 15px;
+            text-align: center;
+            background: -webkit-linear-gradient(top left, rgb(255, 213, 75), rgb(235, 226, 193) 10% 90%, rgb(255, 213, 75));
+        }
+        section{
+            border:1px solid black;
+            border-radius: 10px;
+            padding:5px;
+            height: 115px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            grid-template-areas: none;
+            grid-template-columns: repeat(8,1fr);
+            gap:5px 5px;
+            text-align: left;
+        }
+        .change{
+            background-color: cadetblue;
+        }
+        img{
+            width:80px;
+            height:90px;
+            
+            border: 2px solid rgb(0, 183, 255);
+        }
+        img:hover{
+            transform: rotate(360deg);
+            transform: scale(1.5);
+            transition: all;
+        }
+    </style>
+    <script>
+        window.addEventListener('load', function () {
+            top = document.getElementById('top');
+            top.addEventListener('drop', dropped);
+            top.addEventListener('dragenter', enterdrag);
+            top.addEventListener('dragover', overdrag);
+            bottom = document.getElementById('bottom')
+            bottom.addEventListener('dragleave', leavedrag);
+            allimages = this.document.images;
+            for (var i = 0; i < allimages.length; i++) {
+                allimages[i].addEventListener('dragstart', startdrag);
+                allimages[i].addEventListener('dragend', enddrag);
+            }
+            
+        });//end of load
+        function startdrag(e) {
+            //console.log('image started drag event');
+            // copy html for image drggable  => datatransfeer 
+           e.dataTransfer.setData('myimg', e.target.outerHTML);
+        }
+        function enddrag(e) {
+            e.preventDefault();
+            e.target.style.display = 'none';
+        }
+        function dropped(e) {
+            e.preventDefault();
+            bottom.innerHTML += e.dataTransfer.getData('myimg');
+            if (bottom.innerHTML !== "") {
+                bottom.classList.add("change");
+            }
+        }
+        function overdrag(e) {
+            e.preventDefault();
+            /*if (bottom.innerHTML === "") {
+                bottom.classList.add("change");
+            }*/
+        }
+        function enterdrag(e) {
+            e.preventDefault();
+            if (bottom.innerHTML === "") {
+                bottom.classList.add("change");
+            }
+        }
+        function leavedrag(e) {
+            e.preventDefault();
+                bottom.classList.remove("change");
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <section id="top">
+            <img src="UP/1.jpg" />
+            <img src="UP/2.jpg" />
+            <img src="UP/3.jpg" />
+            <img src="UP/4.jpg" />
+            <img src="UP/5.jpg" />
+            <img src="UP/6.jpg" />
+            <img src="UP/7.jpg" />
+            <img src="UP/8.jpg" />
+        </section>
+        <section id="bottom"></section>
+    </div>
+</body>
+</html>

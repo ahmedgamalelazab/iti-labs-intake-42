@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3 - task5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #mainWrapper {
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px 0%;
+            width: 80%;
+            height: auto;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: yellowgreen 30px 30px 200px inset;
+        }
+
+        #leftS {
+            width: 50%;
+            height: 100%;
+            border: inherit;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+            /* -webkit-box-flex: 1; */
+            box-shadow: lightpink 20px 20px 150px inset;
+            font-size: 1rem;
+        }
+
+        #rightS {
+            width: 50%;
+            height: 100%;
+            border: inherit;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 10px;
+            text-align: center;
+            /* -webkit-box-flex: 1; */
+            box-shadow: lightgreen 20px 20px 150px inset;
+            font-size: 1rem;
+        }
+
+        input {
+            margin: 2px;
+            padding: 2px;
+            height: 50px;
+            width: 100px;
+            border-radius: 5%;
+            border: 1px groove gray;
+        }
+    </style>
+</head>
+
+<body>
+    <form
+        oninput="sumResult.value = parseInt(sum1.value) + parseInt(sum2.value); mltResult.value = parseInt(mlt1.value) * parseInt(mlt2.value);">
+        <div id="mainWrapper">
+            <section id="leftS">
+                <b>ADDITION</b><br/>
+                <input type="number" name="sum1" min="0" value="0" /> + <input type="number" name="sum2" min="0"
+                    value="0" /> =
+                <output for="sum1 sum2" name="sumResult"></output>
+            </section>
+            <section id="rightS">
+                <b>MULTIPLICATION</b><br/>
+                <input type="number" name="mlt1" min="1" value="1" /> x <input type="number" name="mlt2" min="1"
+                    value="1" /> =
+                <output for="mlt1 mlt2" name="mltResult"></output>
+            </section>
+        </div>
+    </form>
+</body>
+
+</html>
